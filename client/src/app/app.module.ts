@@ -9,8 +9,8 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { ProductEditComponent } from './product-edit/product-edit.component';
 import { ProductCreateComponent } from './product-create/product-create.component';
 import {ProductsManagerService} from "./products-manager.service";
-import {HttpClientModule} from "@angular/common/http";
 import {FormsModule} from "@angular/forms";
+import {HttpModule} from "@angular/http";
 
 
 @NgModule({
@@ -24,7 +24,7 @@ import {FormsModule} from "@angular/forms";
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule,
+    HttpModule,
     FormsModule
   ],
   providers: [ProductsManagerService],

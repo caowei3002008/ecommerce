@@ -1,3 +1,9 @@
-<p>
-  product-create works!
-</p>
+<h3>Add New Product</h3>
+<form (submit)="submitNewProduct()">
+  <p><label>Product Name: <input type="text" name="productName" [(ngModel)] = "product.name" #productName = "ngModel"></label></p>
+  <p><label>Qty: <input type="number" name="productQuantity" [(ngModel)] = "product.quantity" #productQuantity = "ngModel"></label></p>
+  <p><label>Price: $ <input type="number" name="productPrice" [(ngModel)] = "product.price" #productPrice = "ngModel"></label></p>
+  <p><label>description: <input type="text" name="productDescription" [(ngModel)] = "product.description" #productDescription = "ngModel"></label></p>
+  <p><input type="submit" value="CREATE"></p>
+
+</form>
