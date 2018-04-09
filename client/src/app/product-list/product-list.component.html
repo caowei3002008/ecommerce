@@ -14,7 +14,10 @@
       <td>{{item.name}}</td>
       <td>$ {{item.price}}</td>
       <td>{{item.quantity}}</td>
-      <td>xxxxxxxx</td>
+      <td><div style="display: inline-block">
+        <button (click)="detail(item._id)">Details</button>
+        <button (click)="edit(item._id)">Edit</button>
+      </div></td>
     </tr>
 </table>
 

@@ -1,3 +1,11 @@
-<p>
-  product-edit works!
-</p>
+<h3>Update Product</h3>
+<button (click)="goBack()">Back</button>
+<form (submit)="updateProduct()">
+  <p><label>Product Name: <input type="text" name="productName" [(ngModel)] = "product.name"  value={{product.name}} #productName = "ngModel"></label></p>
+  <p><label>Qty: <input type="number" name="productQuantity" [(ngModel)] = "product.quantity" value={{product.quantity}} #productQuantity = "ngModel"></label></p>
+  <p><label>Price: $ <input type="number" name="productPrice" [(ngModel)] = "product.price" value={{product.price}} #productPrice = "ngModel"></label></p>
+  <p><label>description: <input type="text" name="productDescription" [(ngModel)] = "product.description" value={{product.description}} #productDescription = "ngModel"></label></p>
+  <p><input type="submit" value="UPDATE"></p>
+  <input type="reset" value="RESET">
+
+</form>

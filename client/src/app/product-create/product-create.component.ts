@@ -30,5 +30,8 @@ export class ProductCreateComponent implements OnInit {
     this._router.navigate(['']);
 
   }
+  goBack(){
+    this._router.navigate(['']);
+  }
 
 }

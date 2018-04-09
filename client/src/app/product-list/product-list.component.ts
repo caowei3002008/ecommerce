@@ -28,5 +28,14 @@ export class ProductListComponent implements OnInit {
         console.log("catch", err);
       })
   }
+  detail(id){
+    console.log("hit detail")
+    this._router.navigate(['detailsproduct',id]);
+  }
+
+  edit(id){
+    console.log("hit edit")
+    this._router.navigate(['editproduct',id]);
+  }
 
 }

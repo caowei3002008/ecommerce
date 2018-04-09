@@ -17,4 +17,19 @@ export class ProductsManagerService {
     return this._http.get('/product/getlist').map(
       Response => Response.json()).toPromise();
   }
+
+  findOneProduct(id){
+    return this._http.post('/product/getoneproduct', {'id': id}).map(
+      Response => Response.json()).toPromise();
+  }
+
+  updateProduct(aProduct, id){
+    return this._http.post('/product/updateproduct', {'product': aProduct, 'id':id}).map(
+      Response => Response.json()).toPromise();
+  }
+
+  deleteOneProduct(id){
+    return this._http.post('/product/deleteproduct', {'id': id}).map(
+      Response => Response.json()).toPromise();
+  }
 }

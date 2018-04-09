@@ -1,3 +1,9 @@
-<p>
-  product-details works!
-</p>
+<h2>Product Details</h2>
+
+<h3>Name: {{product.name}}</h3>
+<h3>Qty: {{product.quantity}}</h3>
+<h3>Price: {{product.price}}</h3>
+<h3>Description: {{product.description}}</h3>
+
+<button (click)="deleteProduct()" *ngIf="product.quantity == 0">DELETE</button>
+<button (click)="goBack()">Back</button>
