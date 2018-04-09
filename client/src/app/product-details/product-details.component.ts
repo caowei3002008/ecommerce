@@ -45,11 +45,11 @@ export class ProductDetailsComponent implements OnInit {
   deleteProduct(){
     console.log("hit delete");
     this._productManager.deleteOneProduct(this.id);
-    this._router.navigate(['']);
+    this._router.navigate(['productlist']);
 
   }
   goBack(){
-    this._router.navigate(['']);
+    this._router.navigate(['productlist']);
   }
 
 }

@@ -11,6 +11,10 @@ import { ProductCreateComponent } from './product-create/product-create.componen
 import {ProductsManagerService} from "./products-manager.service";
 import {FormsModule} from "@angular/forms";
 import {HttpModule} from "@angular/http";
+import { LoginPageComponent } from './login-page/login-page.component';
+import { SignUpPageComponent } from './sign-up-page/sign-up-page.component';
+import { MyAccountComponent } from './my-account/my-account.component';
+import {UsersService} from "./users.service";
 
 
 @NgModule({
@@ -19,7 +23,10 @@ import {HttpModule} from "@angular/http";
     ProductListComponent,
     ProductDetailsComponent,
     ProductEditComponent,
-    ProductCreateComponent
+    ProductCreateComponent,
+    LoginPageComponent,
+    SignUpPageComponent,
+    MyAccountComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +34,7 @@ import {HttpModule} from "@angular/http";
     HttpModule,
     FormsModule
   ],
-  providers: [ProductsManagerService],
+  providers: [ProductsManagerService, UsersService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

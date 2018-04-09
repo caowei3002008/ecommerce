@@ -27,11 +27,11 @@ export class ProductCreateComponent implements OnInit {
   }
   submitNewProduct(){
     this._productManager.addProduct(this.product);
-    this._router.navigate(['']);
+    this._router.navigate(['productlist']);
 
   }
   goBack(){
-    this._router.navigate(['']);
+    this._router.navigate(['productlist']);
   }
 
 }

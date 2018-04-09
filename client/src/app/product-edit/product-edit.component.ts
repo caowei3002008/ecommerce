@@ -51,10 +51,10 @@ export class ProductEditComponent implements OnInit {
       .catch((err) =>{
         console.log("catch", err);
       })
-    this._router.navigate(['']);
+    this._router.navigate(['productlist']);
   }
   goBack(){
-    this._router.navigate(['']);
+    this._router.navigate(['productlist']);
   }
 
 }

@@ -1,0 +1,10 @@
+<h2>Sign in</h2>
+<form (submit)="signIn()">
+  <p><label>Username:</label></p>
+  <p><input type="text" name="username" [(ngModel)] = "user.username" #username = "ngModel"> </p>
+  <p><label>Password:</label></p>
+  <p><input type="password" name="password" [(ngModel)] = "user.password" #password = "ngModel"> </p>
+  <p><input type="submit" value="Sign In"></p>
+</form>
+<button (click)="newAccount()">Create your new account</button>
+
