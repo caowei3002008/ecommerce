@@ -4,18 +4,18 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { ProductListComponent } from './product-list/product-list.component';
-import { ProductDetailsComponent } from './product-details/product-details.component';
-import { ProductEditComponent } from './product-edit/product-edit.component';
-import { ProductCreateComponent } from './product-create/product-create.component';
+import { ProductListComponent } from './Products/product-list/product-list.component';
+import { ProductDetailsComponent } from './Products/product-details/product-details.component';
+import { ProductEditComponent } from './Products/product-edit/product-edit.component';
+import { ProductCreateComponent } from './Products/product-create/product-create.component';
 import {ProductsManagerService} from "./products-manager.service";
 import {FormsModule} from "@angular/forms";
 import {HttpModule} from "@angular/http";
-import { LoginPageComponent } from './login-page/login-page.component';
-import { SignUpPageComponent } from './sign-up-page/sign-up-page.component';
-import { MyAccountComponent } from './my-account/my-account.component';
+import { LoginPageComponent } from './Users/login-page/login-page.component';
+import { SignUpPageComponent } from './Users/sign-up-page/sign-up-page.component';
+import { MyAccountComponent } from './Users/my-account/my-account.component';
 import {UsersService} from "./users.service";
-import { ProfileComponent } from './profile/profile.component';
+import { ProfileComponent } from './Users/profile/profile.component';
 
 
 @NgModule({
