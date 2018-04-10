@@ -1,0 +1,11 @@
+<h2>Profile page settings</h2>
+<h3>Hello {{user.username}}</h3>
+<form (submit)="profilePageEdit()">
+  <p>Email: <input type="email" name="email" value={{user.email}} [(ngModel)] = "user.email" #email = "ngModel"></p>
+  <!--<p>Email: <input type="email" name="email" value={{user.email}} [(ngModel)] = "user.email" #email = "ngModel"></p>-->
+  <!--<p>Email: <input type="email" name="email" value={{user.email}} [(ngModel)] = "user.email" #email = "ngModel"></p>-->
+  <!--<p>Email: <input type="email" name="email" value={{user.email}} [(ngModel)] = "user.email" #email = "ngModel"></p>-->
+  <!--<p>Email: <input type="email" name="email" value={{user.email}} [(ngModel)] = "user.email" #email = "ngModel"></p>-->
+  <!--<p>Email: <input type="email" name="email" value={{user.email}} [(ngModel)] = "user.email" #email = "ngModel"></p>-->
+ <input type="submit" value="UPDATE">
+</form>

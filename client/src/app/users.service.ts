@@ -21,5 +21,13 @@ export class UsersService {
         return this._http.post('/user/findUser', {username: aUser}).map(
           Response => Response.json()).toPromise();
       }
+  updatePersonalProfile(aUser){
+    return this._http.post('/user/profileUpdate', {username: aUser}).map(
+      Response => Response.json()).toPromise();
+  }
+  getUserInfoById(id){
+    return this._http.post('/user/findUserById', {id: id}).map(
+      Response => Response.json()).toPromise();
+  }
 
 }

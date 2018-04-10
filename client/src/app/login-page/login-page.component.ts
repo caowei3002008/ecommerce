@@ -30,8 +30,15 @@ export class LoginPageComponent implements OnInit {
   signIn(){
     this._usersService.loginAccount(this.user)
     .then((data) =>{
-      console.log("Success!")
-      this._router.navigate(['myaccount', this.user.username]);
+      if(data){
+        console.log(data);
+        console.log("Success!")
+        this._router.navigate(['myaccount', this.user.username]);
+
+      }else{
+        console.log("Failed")
+      }
+
     })
       .catch((err) =>{
         console.log("catch", err);

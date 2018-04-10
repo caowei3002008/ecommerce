@@ -15,6 +15,7 @@ import { LoginPageComponent } from './login-page/login-page.component';
 import { SignUpPageComponent } from './sign-up-page/sign-up-page.component';
 import { MyAccountComponent } from './my-account/my-account.component';
 import {UsersService} from "./users.service";
+import { ProfileComponent } from './profile/profile.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import {UsersService} from "./users.service";
     ProductCreateComponent,
     LoginPageComponent,
     SignUpPageComponent,
-    MyAccountComponent
+    MyAccountComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,

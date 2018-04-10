@@ -10,5 +10,7 @@ module.exports = (app) => {
     app.post('/user/create', User.createAccount);
     app.post('/user/login', User.loginAccount);
     app.post('/user/findUser', User.findUser);
+    app.post('/user/findUserById', User.findUserById);
+    app.post('/user/profileUpdate', User.profileUpdate);
 }
 

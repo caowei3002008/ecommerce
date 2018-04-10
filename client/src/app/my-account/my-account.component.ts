@@ -41,7 +41,7 @@ export class MyAccountComponent implements OnInit {
       })
   }
   advanceToProductManager(){
-    this._router.navigate([])
+    this._router.navigate(['productlist']);
   }
 
 }
