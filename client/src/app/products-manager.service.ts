@@ -32,4 +32,9 @@ export class ProductsManagerService {
     return this._http.post('/product/deleteproduct', {'id': id}).map(
       Response => Response.json()).toPromise();
   }
+
+  searchProduct(aProduct){
+    return this._http.post('/product/searchProduct', {'name': aProduct}).map(
+      Response => Response.json()).toPromise();
+  }
 }

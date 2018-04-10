@@ -61,5 +61,12 @@ module.exports = {
                 console.log("delete");
             }
         });
+    },
+    searchProduct: (req,res) =>{
+        Products.find({name: new RegExp(req.body.name,"i")}, function(err, founded){
+            if(err) res.json(err);
+            res.json(founded);
+        })
     }
+
 }

@@ -1,0 +1,17 @@
+
+<div style="text-align: right"><a [routerLink] = "['login']">Login</a></div>
+<h1>Easily Shop</h1>
+<div>
+  <form (submit)="productSearch()">
+    <input type="text" name="searchBar" [(ngModel)] = "searchResults" #searchBar = "ngModel"> <input type="submit" value="GO!!">
+  </form>
+</div>
+<div *ngIf="products">
+  <ul *ngFor="let item of products">
+    <li>
+      <ul>
+        <li>{{item.name}}</li>
+      </ul>
+    </li>
+  </ul>
+</div>

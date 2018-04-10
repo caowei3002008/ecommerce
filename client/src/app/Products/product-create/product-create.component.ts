@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {ProductsManagerService} from "../products-manager.service";
+import {ProductsManagerService} from "./../../products-manager.service";
 import {Router} from "@angular/router";
 
 @Component({
@@ -17,9 +17,10 @@ export class ProductCreateComponent implements OnInit {
     reviews: [],
     quantity: "",
     storeLocated: "",
-    viewTimes: 0
+    viewTimes: 0,
+    url: ""
 
-  }
+  };
 
   constructor(private _productManager: ProductsManagerService, private _router: Router) { }
 

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute, Router} from "@angular/router";
-import {ProductsManagerService} from "../products-manager.service";
+import {ProductsManagerService} from "./../../products-manager.service";
 
 @Component({
   selector: 'app-product-details',
@@ -18,7 +18,8 @@ export class ProductDetailsComponent implements OnInit {
     reviews: [],
     quantity: "",
     storeLocated: "",
-    viewTimes: 0
+    viewTimes: 0,
+    url: ""
 
   }
   constructor(private _route: ActivatedRoute, private _productManager: ProductsManagerService, private _router: Router) {

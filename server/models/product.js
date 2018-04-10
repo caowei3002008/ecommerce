@@ -7,7 +7,8 @@ var ProductSchema = mongoose.Schema({
     reviews: Array,
     quantity: Number,
     storeLocated: String,
-    viewTimes: Number
+    viewTimes: Number,
+    url: String
 },{timestamps: true})
 
 mongoose.model('Products', ProductSchema);

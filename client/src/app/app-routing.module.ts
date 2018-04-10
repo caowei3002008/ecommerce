@@ -8,9 +8,10 @@ import {LoginPageComponent} from "./Users/login-page/login-page.component";
 import {SignUpPageComponent} from "./Users/sign-up-page/sign-up-page.component";
 import {MyAccountComponent} from "./Users/my-account/my-account.component";
 import {ProfileComponent} from "./Users/profile/profile.component";
+import {MainPageComponent} from "./mainProduct/main-page/main-page.component";
 
 const routes: Routes = [
-  {path:"", redirectTo:"/login", pathMatch: 'full'},
+  {path:"", pathMatch: 'full', component: MainPageComponent},
   {path: "productlist", component: ProductListComponent},
   {path:'createproduct', component: ProductCreateComponent},
   {path:'detailsproduct/:id', component: ProductDetailsComponent},
